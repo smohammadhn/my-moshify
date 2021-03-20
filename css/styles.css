@@ -93,16 +93,17 @@ a {
   white-space: nowrap;
   font-size: 2rem;
 }
-.badge-primary {
+.badge-darkblue {
   background-color: var(--color-primary);
   color: #fff;
 }
-.badge-secondary {
+.badge-lightblue {
   background-color: var(--color-secondary);
   color: #fff;
 }
 .badge-small {
   font-size: 1.6rem;
+  padding-left: 0.5rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .badge {
@@ -253,4 +254,80 @@ a {
   }
 }
 
-/*------------------------------- Inputs ---------------------------------*/
+/*------------------------------- Cards ---------------------------------*/
+
+.card {
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  border-radius: 7px;
+}
+.card-header {
+  color: #fff;
+  border-radius: 7px 7px 0 0;
+  padding: 2rem 3rem;
+  position: relative;
+  overflow: visible;
+}
+.card-primary .card-header::before {
+  content: url(/Images/popular.svg);
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 5%;
+}
+.card-body {
+  padding: 0 3rem 2rem;
+}
+.card-body .btn {
+  margin-top: 0;
+}
+.card-primary .card-header {
+  background: var(--color-primary);
+}
+.card-secondary .card-header {
+  background: var(--color-secondary);
+}
+.card-title {
+  color: #fff;
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.card-price {
+  font-size: 6rem;
+}
+.card-billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+.card .badge {
+  display: inline-block;
+  transform: translate(0, -3px);
+}
+.card-description {
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: 300;
+  display: block;
+}
+.card .list-item {
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .card-title {
+    font-size: 1.4rem;
+  }
+  .card-price {
+    font-size: 5rem;
+  }
+  .card-billing-cycle {
+    font-size: 1.6rem;
+  }
+}
+
+/*------------------------------- Cards ---------------------------------*/
+
+
