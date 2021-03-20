@@ -328,6 +328,17 @@ a {
   }
 }
 
-/*------------------------------- Cards ---------------------------------*/
+/*------------------------------- Media objects ---------------------------------*/
 
-
+.media {
+  display: flex;
+}
+.media-image {
+  margin-top: 1.5rem;
+}
+.media-body {
+  margin: 0 2rem;
+}
+.media-title {
+  margin-top: 0;
+}
