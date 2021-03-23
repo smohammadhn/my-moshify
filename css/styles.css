@@ -31,6 +31,7 @@ h2,
 h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -188,7 +189,7 @@ a {
   display: inline-block;
 }
 .btn-long {
-  padding: 2rem 6rem;
+  padding: 2rem 9rem;
 }
 .btn-primary {
   background: var(--color-primary);
@@ -522,11 +523,11 @@ a {
 }
 .block-skewed-right {
   padding-bottom: calc(var(--vertical-padding) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 .block-skewed-left {
-  padding-bottom: cal(var(--vertical-padding) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: calc(var(--vertical-padding) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 /*------------------------------- Main navBar ---------------------------------*/
@@ -578,5 +579,27 @@ a {
   }
   .nav li {
     border-bottom: none;
+  }
+}
+
+/*------------------------------- Banner ---------------------------------*/
+
+.hero-tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  padding: 2rem 0 5rem;
+}
+
+.hero-image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero-content {
+    text-align: left;
+    align-self: center;
   }
 }
