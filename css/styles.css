@@ -469,3 +469,62 @@ a {
     margin: auto 4rem;
   }
 }
+
+/*------------------------------- Collapsibles ---------------------------------*/
+
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible-heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+.collapsible-chevron {
+  transform: rotate(90deg);
+}
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.collapsible-expanded .collapsible-chevron {
+  transform: rotate(0);
+  transition: 0.3s;
+}
+.collapsible-expanded .collapsible-content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/*------------------------------- Blocks ---------------------------------*/
+
+.block {
+  --vertical-padding: 6rem;
+  padding: var(--vertical-padding) 2rem;
+}
+.block-header {
+  text-align: center;
+}
+.block .block-heading {
+  margin-top: 0;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.block-dark {
+  background: #000;
+}
+.block-dark .block-heading {
+  color: #fff;
+}
+.block-skewed-right {
+  padding-bottom: ;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+.block-skewed-left {
+  padding-bottom: cal(var(--vertical-padding) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
