@@ -521,10 +521,62 @@ a {
   color: #fff;
 }
 .block-skewed-right {
-  padding-bottom: ;
+  padding-bottom: calc(var(--vertical-padding) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
 .block-skewed-left {
   padding-bottom: cal(var(--vertical-padding) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+/*------------------------------- Main navBar ---------------------------------*/
+
+.nav {
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+.nav .list {
+  width: 100%;
+  margin: 0;
+}
+.nav li {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+.nav li > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+.nav li > a:hover {
+  color: #fff;
+}
+.nav-toggler {
+  opacity: 0.8;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+.nav.collapsible-expanded .nav-toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .nav-toggler {
+    display: none;
+  }
+  .nav .list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+  .nav li {
+    border-bottom: none;
+  }
 }
