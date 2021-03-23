@@ -2,9 +2,21 @@
   <div class="container grid grid--cols-2">
     <header class="block-header hero-content">
       <h1 class="block-heading">Cloud Hosting for Pros</h1>
-      <p class="hero-tagline">Deploy your website in less than 60 seconds.</p>
+      <p class="hero-tagline">
+        Deploy your website in less than 60 seconds.
+      </p>
       <a href="#" class="btn btn-accent btn-long">Get started</a>
     </header>
-    <img class="hero-image" src="/Images/banner.png" alt="a banner" />
+    <picture>
+      <source
+        type="image/webp"
+        srcset="/Images/banner.webp 1x, /Images/banner@2x.webp 2x"
+      />
+      <source
+        type="image/png"
+        srcset="/Images/banner.png 1x, /Images/banner@2x.png 2x"
+      />
+      <img class="hero-image" src="/Images/banner.png" alt="a banner" />
+    </picture>
   </div>
 </section>
