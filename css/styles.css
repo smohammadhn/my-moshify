@@ -639,3 +639,28 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
+
+/*------------------------------- Domain Block ---------------------------------*/
+
+.block-plans {
+  padding: 2rem;
+  gap: 5rem;
+  margin-top: 1rem;
+}
+.block-plans .card {
+  transition: transform 0.3s ease-out;
+}
+.block-plans .card:hover {
+  transform: scale(1.05);
+}
+@media screen and (min-width: 1024px) {
+  .block-plans {
+    gap: 5rem;
+  }
+  .block-plans .card-primary {
+    transform: scale(1.1);
+  }
+  .block-plans .card-primary:hover {
+    transform: scale(1.15);
+  }
+}
