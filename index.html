@@ -4,15 +4,389 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta
+      name="description"
+      content="This is my first project and I'm loving it. I am also the best."
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>SMHN8 - I'm the best</title>
   </head>
   <body>
+    <!-- Navigation block -->
+    <nav class="nav collapsible">
+      <a style="transform: translateY(5px)" href="/"
+        ><img src="/Images/logo.svg" alt="Moshify logo"
+      /></a>
+      <svg class="icon icon-white nav-toggler">
+        <use href="Images\sprite.svg#menu"></use>
+      </svg>
+      <ul class="list collapsible-content">
+        <li><a href="#">Hosting</a></li>
+        <li><a href="#">VPS</a></li>
+        <li><a href="#">Domain</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+    <!-- Banner block -->
+    <section class="block block-dark block-skewed-left">
+      <div class="container grid grid--cols-2">
+        <header class="block-header hero-content" data-aos="fade-right">
+          <h1 class="block-heading">Cloud Hosting for Pros</h1>
+          <p class="hero-tagline">
+            Deploy your website in less than 60 seconds.
+          </p>
+          <a href="#" class="btn btn-accent btn-long">Get started</a>
+        </header>
+        <picture data-aos="zoom-in">
+          <source
+            type="image/webp"
+            srcset="/Images/banner.webp 1x, /Images/banner@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="/Images/banner.png 1x, /Images/banner@2x.png 2x"
+          />
+          <img class="hero-image" src="/Images/banner.png" alt="a banner" />
+        </picture>
+      </div>
+    </section>
+    <!-- domain block -->
+    <section class="block block-domain" data-aos="fade-up">
+      <div class="container">
+        <header class="block-header">
+          <h2 class="block-heading">Heading</h2>
+          <p class="block-heading-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+            voluptate autem mollitia! Asperiores alias, fugit repudiandae quos
+            temporibus odio deserunt.
+          </p>
+        </header>
+      </div>
+      <div class="search-input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Enter your domain here ..."
+        />
+        <button class="btn btn-accent btn-icon">
+          <svg class="icon icon-primary">
+            <use href="Images\sprite.svg#search"></use>
+          </svg>
+          search
+        </button>
+      </div>
+      <ul class="list grid domain-list">
+        <li><span class="badge badge-lightblue">.com $10</span></li>
+        <li>.com $10</li>
+        <li>.com $10</li>
+        <li>.com $10</li>
+        <li>.com $10</li>
+        <li>.com $10</li>
+      </ul>
+    </section>
+    <!-- Plans Block -->
+    <section class="grid grid--cols-3 container block-plans">
+      <div class="card card-secondary" data-aos="fade-up-right">
+        <header class="card-header">
+          <h3 class="card-title">Entry</h3>
+          <span class="card-price">$14</span>
+          <span class="card-billing-cycle">/month</span>
+          <span class="badge badge-darkblue badge-small">10% off</span>
+          <span class="card-description">Easy start on the cloud</span>
+        </header>
+        <div class="card-body">
+          <ul class="list list-tick">
+            <li class="list-item">Unlimited Websites</li>
+            <li class="list-item">Unlimited Bandwidth</li>
+            <li class="list-item">100 GB SSD Storage</li>
+            <li class="list-item">3 GB RAM</li>
+          </ul>
+          <button class="btn btn-outline btn-block">Some text</button>
+        </div>
+      </div>
+      <div class="card card-primary" data-aos="fade-up">
+        <header class="card-header">
+          <h3 class="card-title">Entry</h3>
+          <span class="card-price">$14</span>
+          <span class="card-billing-cycle">/month</span>
+          <span class="badge badge-lightblue badge-small">10% off</span>
+          <span class="card-description">Easy start on the cloud</span>
+        </header>
+        <div class="card-body">
+          <ul class="list list-tick">
+            <li class="list-item">Unlimited Websites</li>
+            <li class="list-item">Unlimited Bandwidth</li>
+            <li class="list-item">100 GB SSD Storage</li>
+            <li class="list-item">3 GB RAM</li>
+          </ul>
+          <button class="btn btn-outline btn-block">Some text</button>
+        </div>
+      </div>
+      <div class="card card-secondary" data-aos="fade-up-left">
+        <header class="card-header">
+          <h3 class="card-title">Entry</h3>
+          <span class="card-price">$14</span>
+          <span class="card-billing-cycle">/month</span>
+          <span class="badge badge-darkblue badge-small">10% off</span>
+          <span class="card-description">Easy start on the cloud</span>
+        </header>
+        <div class="card-body">
+          <ul class="list list-tick">
+            <li class="list-item">Unlimited Websites</li>
+            <li class="list-item">Unlimited Bandwidth</li>
+            <li class="list-item">100 GB SSD Storage</li>
+            <li class="list-item">3 GB RAM</li>
+          </ul>
+          <button class="btn btn-outline btn-block">Some text</button>
+        </div>
+      </div>
+    </section>
+    <!-- Features block -->
+    <section class="block container block-feature">
+      <header class="block-header">
+        <h2 class="block-heading">Host on the cloud to keep growing</h2>
+        <p class="block-description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, quia.
+        </p>
+      </header>
+
+      <div class="grid grid--cols-2 block-feature-item">
+        <div class="media" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon-primary">
+              <use href="Images\sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <div class="media-body">
+            <h3 class="media-title">Lorem ipsum dolor sit amet.</h3>
+            <div class="media-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+              repudiandae omnis nostrum, at obcaecati magni deleniti non fuga
+              dolor commodi!
+            </div>
+            <a href="#" class="link-arrow">fuck you</a>
+          </div>
+        </div>
+        <picture data-aos="zoom-in-left">
+          <source
+            type="image/webp"
+            srcset="Images/easy.webp 1x, Images/easy@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="Images/easy.jpg 1x, Images/easy@2x.jpg 2x"
+          />
+          <img src="Images/easy.jpg" alt="" />
+        </picture>
+      </div>
+
+      <div class="grid grid--cols-2 block-feature-item">
+        <div class="media">
+          <span class="icon-container">
+            <svg class="icon icon-primary">
+              <use href="Images\sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <div class="media-body">
+            <h3 class="media-title">Lorem ipsum dolor sit amet.</h3>
+            <div class="media-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+              repudiandae omnis nostrum, at obcaecati magni deleniti non fuga
+              dolor commodi!
+            </div>
+            <a href="#" class="link-arrow">fuck you</a>
+          </div>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="Images/easy.webp 1x, Images/easy@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="Images/easy.jpg 1x, Images/easy@2x.jpg 2x"
+          />
+          <img src="Images/easy.jpg" alt="" />
+        </picture>
+      </div>
+
+      <div class="grid grid--cols-2 block-feature-item">
+        <div class="media">
+          <span class="icon-container">
+            <svg class="icon icon-primary">
+              <use href="Images\sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <div class="media-body">
+            <h3 class="media-title">Lorem ipsum dolor sit amet.</h3>
+            <div class="media-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+              repudiandae omnis nostrum, at obcaecati magni deleniti non fuga
+              dolor commodi!
+            </div>
+            <a href="#" class="link-arrow">fuck you</a>
+          </div>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="Images/easy.webp 1x, Images/easy@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="Images/easy.jpg 1x, Images/easy@2x.jpg 2x"
+          />
+          <img src="Images/easy.jpg" alt="" />
+        </picture>
+      </div>
+    </section>
+    <!-- Testimonials block -->
+    <section
+      class="block container"
+      data-aos="flip-left"
+      data-aos-once="false"
+      data-aos-duration="2000"
+    >
+      <header class="block-header">
+        <h2 class="block-heading">what our customers are saying</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+          voluptate autem mollitia! Asperiores alias, fugit repudiandae quos
+          temporibus odio deserunt.
+        </p>
+      </header>
+      <div class="card testimonial">
+        <div class="grid grid--cols-2">
+          <div class="testimonial-image">
+            <img
+              src="/Images/testimonial.jpg"
+              alt="A happy, smiling customer"
+            />
+            <span class="icon-container icon-container-accent">
+              <svg class="icon icon-small icon-white">
+                <use href="Images\sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+          <blockquote class="quote testimonial-quote">
+            <p class="quote-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit incidunt molestiae labore quaerat animi quos
+              necessitatibus quasi illo sit delectus?
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media-image">
+                  <svg class="icon icon-primary quote-line">
+                    <use href="Images\sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media-body">
+                  <h3 class="media-title quote-author">
+                    S.Mohammad Hosseininejad
+                  </h3>
+                  <div class="media-description quote-author-description">
+                    A front-end master
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <!-- Footer block -->
+    <footer class="block block-dark grid block-footer">
+      <div class="collapsible">
+        <div class="collapsible-header">
+          <h2 class="block-heading collapsible-heading footer-heading">
+            Heading 1
+          </h2>
+          <svg class="icon icon-white collapsible-chevron">
+            <use href="Images\sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <ul class="list collapsible-content">
+          <li class="list-item"><a href="#">item 1</a></li>
+          <li class="list-item"><a href="#">item 2</a></li>
+          <li class="list-item"><a href="#">item 3</a></li>
+          <li class="list-item"><a href="#">item 4</a></li>
+          <li class="list-item"><a href="#">item 5</a></li>
+        </ul>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">
+          <h2 class="block-heading collapsible-heading footer-heading">
+            Heading 2
+          </h2>
+          <svg class="icon icon-white collapsible-chevron">
+            <use href="Images\sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <ul class="list collapsible-content">
+          <li class="list-item"><a href="#">item 1</a></li>
+          <li class="list-item"><a href="#">item 2</a></li>
+          <li class="list-item"><a href="#">item 3</a></li>
+          <li class="list-item"><a href="#">item 4</a></li>
+          <li class="list-item"><a href="#">item 5</a></li>
+        </ul>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">
+          <h2 class="block-heading collapsible-heading footer-heading">
+            Heading 3
+          </h2>
+          <svg class="icon icon-white collapsible-chevron">
+            <use href="Images\sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <ul class="list collapsible-content">
+          <li class="list-item"><a href="#">item 1</a></li>
+          <li class="list-item"><a href="#">item 2</a></li>
+          <li class="list-item"><a href="#">item 3</a></li>
+          <li class="list-item"><a href="#">item 4</a></li>
+          <li class="list-item"><a href="#">item 5</a></li>
+        </ul>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">
+          <h2 class="block-heading collapsible-heading footer-heading">
+            Heading 4
+          </h2>
+          <svg class="icon icon-white collapsible-chevron">
+            <use href="Images\sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <ul class="list collapsible-content">
+          <li class="list-item"><a href="#">item 1</a></li>
+          <li class="list-item"><a href="#">item 2</a></li>
+          <li class="list-item"><a href="#">item 3</a></li>
+          <li class="list-item"><a href="#">item 4</a></li>
+          <li class="list-item"><a href="#">item 5</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-credit">
+        <img src="Images/logo.svg" alt="logo" />
+        <p class="footer-copyright">
+          2020 S.M.Hosseininejad All rights Reserved
+        </p>
+      </div>
+    </footer>
+    <!-- javascript codes -->
     <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

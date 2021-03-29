@@ -18,7 +18,7 @@
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -87,7 +87,7 @@ a {
 .link-arrow:hover::after {
   margin-left: 10px;
 }
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
   }
@@ -112,7 +112,7 @@ a {
 }
 .badge-small {
   font-size: 1.6rem;
-  padding-left: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .badge {
@@ -142,7 +142,7 @@ a {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   .list-tick .list-item {
     padding-left: 0;
   }
@@ -673,8 +673,11 @@ a {
 }
 
 /*------------------------------- Features Block ---------------------------------*/
+.block-feature {
+  padding-bottom: 0;
+}
 .block-feature-item {
-  margin: 10rem 0;
+  margin-top: 10rem;
   gap: 3rem;
 }
 .block-feature-item .media {
